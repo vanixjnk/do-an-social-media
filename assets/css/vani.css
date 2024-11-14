@@ -443,3 +443,45 @@
     right: 20px;
     z-index: 1200;
 }
+
+.ta-8b3b .ta-c74b {
+    background: #fff;
+    border-radius: 6px;
+    transition: background .5s
+}
+
+@media(min-width:376px) {
+    .ta-8b3b .ta-c74b {
+        padding: .27rem .3rem
+    }
+}
+
+.ta-8b3b .ta-c74b .ta-8340 {
+    color: var(--bs-dark)!important;
+    display: inline-block;
+    min-width: 63px;
+    text-align: center
+}
+
+@media(max-width:376px) {
+    .ta-8b3b .ta-c74b .ta-8340 {
+        min-width: 60px
+    }
+}
+
+.ta-8b3b .ta-c74b.ta-b202 {
+    background: #ebebeb
+}
+
+.ta-8b3b .ta-c74b.ta-b202 .ta-8340 {
+    font-weight: 700
+}
+
+.ta-8b3b .ta-05f3 {
+    font-size: 3vw
+}
+
+.ta-8b3b .ta-539e {
+    display: block;
+    font-size: 2.2vw
+}

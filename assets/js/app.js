@@ -64,26 +64,6 @@ window.onscroll = function() {
 
 
 
-function scroll() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        if ($(".ta-backto-top").length <= 0) {
-            $("body").append(`<div class="ta-backto-top shadow-sm ta-facf">
-        <button class="btn btn-light btn-sm">
-            <i class="fad fa-arrow-up px-1 py-1"></i>
-        </button>
-    </div>
-    `);
-        } else {
-            $(".ta-backto-top").click(() => {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            })
-        }
-    } else {
-        $(".ta-backto-top").remove();
-    }
-}
-
 
 function CurlHttp(url, method = 'GET', data = null, button = null) {
     if (button == null) {
