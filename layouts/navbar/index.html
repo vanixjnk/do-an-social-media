@@ -1,0 +1,87 @@
+<nav class="ta-navbar navbar navbar-expand-lg sticky-top navbar-white bg-white shadow-sm">
+    <div class="container-fluid ta-container">
+        <div class="d-flex align-items-center">
+            <button type="button" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="/" data-page="home" aria-current="page" class="navbar-brand fw-bold d-flex align-items-center nuxt-link-exact-active nuxt-link-active">
+                <img height="27" alt="Vani Logo" src="/favicon.ico">
+            </a>
+            <ul class="navbar-nav dropdown-profile align-items-center flex-row">
+                <li class="ta-b1e5 ta-5dbb"><a href="/messages/" class="btn btn-light border-0 rounded position-relative ta-cbaf"><i class="fad fa-comments-alt text-primary"></i> <!----></a></li>
+                <li class="ta-b1e5 ta-5dbb ta-86ca"><a href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="btn btn-light border-0 rounded position-relative ta-cbaf"><i class="fad fa-bells text-primary"></i> <!----></a>
+                    <div class="dropdown-menu dropdown-menu-notification dropdown-menu-end w-100">
+                        <div class="dropdown-title border-bottom d-flex align-items-center justify-content-between">
+                            <h5 class="fw-bold fs-14 mb-0">
+                                Thông báo
+                            </h5>
+                        </div>
+                        <div class="text-center py-4">
+                            <div class="icon"><i class="fad fa-bell-slash fa-5x text-primary"></i></div> <span class="d-block pt-3 fs-17 fw-bold">
+                    Không có thông báo.
+                </span></div> <a href="/notifications/" class="d-block py-2 text-center border-top">Xem tất cả</a></div>
+                </li>
+                <li class="nav-item dropdown bg-light rounded">
+                    <a href="javascript:void(0)" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="nav-link dropdown-toggle d-flex align-items-center outline-0">
+                        <img alt="" src="/assets/img/avatar/vani2.jpg" class="img-navbar rounded-circle shadow-sm me-1">
+                        <span class="px-0 px-sm-1 lh-0 fs-13">
+                            <span class="text-muted d-none d-sm-inline">Nguyen Dinh Bao</span>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li>
+                            <a href="/settings/" class="dropdown-item">
+                                <i class="fal fa-cog"></i><span>Settings</span></a>
+                        </li>
+                        <li>
+                            <a href="/profile/" class="dropdown-item">
+                                <i class="fal fa-user-circle"></i><span>Profile</span></a>
+                        </li>
+                        <hr class="dropdown-divider">
+                        <li><a href="/logout" class="dropdown-item"><i class="fal fa-sign-out"></i> <span>Đăng
+                                    xuất</span></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="navbarNav" class="collapse navbar-collapse my-2 mt-lg-0 mb-1 mb-lg-0">
+            <ul class="navbar-nav navbar-main me-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">
+                        <i class="fal text-dark fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/friends" class="nav-link">
+                        <i class="fal text-dark fa-users"></i> Friends
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/videos" class="nav-link">
+                        <i class="fal text-dark fa-camera"></i> Video
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/profile" class="nav-link">
+                        <i class="fal text-dark fa-user"></i> Profile
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/events" class="nav-link">
+                        <i class="fal text-dark fa-calendar"></i> Events
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/notifications" class="nav-link">
+                        <i class="fal text-dark fa-concierge-bell"></i> Notifications
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/settings" class="nav-link">
+                        <i class="fal text-dark fa-cog"></i> Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

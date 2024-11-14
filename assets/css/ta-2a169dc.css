@@ -1,0 +1,60 @@
+.shop-profile .avatar img {
+    height: 150px;
+    width: 150px
+}
+
+.shop-profile .social a {
+    padding-right: 7px
+}
+
+.shop-profile .social a:last-child {
+    padding-right: 0
+}
+
+.shop-profile .bio a:hover {
+    color: var(--bs-primary)
+}
+
+.shop-profile .name {
+    font-size: 25px
+}
+
+@media(max-width:320px) {
+    .shop-profile .name {
+        font-size: 14px
+    }
+}
+
+@media(min-width:577px) {
+    .shop-profile .shop-context {
+        align-items: center;
+        justify-content: space-between
+    }
+}
+
+@media(max-width:577px) {
+    .shop-profile .shop-context {
+        flex-direction: column
+    }
+    .shop-profile .name {
+        font-size: 23px
+    }
+    .shop-profile .shop-header {
+        flex-direction: column!important;
+        text-align: center
+    }
+    .shop-profile .shop-header.is-cover {
+        margin-top: -90px
+    }
+}
+
+.shop-profile .shop-cover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    max-height: 270px;
+    overflow: hidden
+}
+
+.shop-profile .shop-cover img {
+    -o-object-fit: contain;
+    object-fit: contain
+}

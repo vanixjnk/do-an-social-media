@@ -1,0 +1,19 @@
+.payment .icon img {
+    border-radius: 10px;
+    height: 80px
+}
+
+.payment .info {
+    line-height: 1.55;
+    min-width: 220px
+}
+
+.payment .btn-qr {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    bottom: 0;
+    line-height: 1.4;
+    padding: .3rem 0;
+    position: absolute;
+    right: 0
+}

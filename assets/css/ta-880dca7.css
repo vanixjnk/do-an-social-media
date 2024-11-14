@@ -1,0 +1,157 @@
+.loader {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 130px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    width: 100%
+}
+
+.loader:after {
+    animation: gradient-animation_2 1.2s linear infinite;
+    background: linear-gradient(110deg, hsla(0, 0%, 89%, 0), hsla(0, 0%, 89%, 0) 40%, hsla(0, 0%, 89%, .5) 50%, hsla(0, 0%, 89%, 0) 60%, hsla(0, 0%, 89%, 0));
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.loader .wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.loader .wrapper>div {
+    background-color: hsla(0, 0%, 62%, .141)
+}
+
+.loader .line-1 {
+    top: 11px
+}
+
+.loader .line-1,
+.loader .line-2 {
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.loader .line-2 {
+    top: 34px
+}
+
+.loader .line-3 {
+    top: 57px
+}
+
+.loader .line-3,
+.loader .line-4 {
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.loader .line-4 {
+    top: 80px
+}
+
+@keyframes gradient-animation_2 {
+    0% {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+.ta-account {
+    border-radius: 5px
+}
+
+.ta-account .carousel-control-next,
+.ta-account .carousel-control-prev {
+    width: 12%
+}
+
+.ta-account .thumbnail img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+@media(min-width:576px) {
+    .ta-account .thumbnail img {
+        height: 178px
+    }
+}
+
+.ta-account .view-account {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.ta-account .seller {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.ta-account .seller .avatar img {
+    height: 25px
+}
+
+.ta-account .seller .name {
+    line-height: 0;
+    padding-left: 6px
+}
+
+.ta-account .description {
+    background: hsla(0, 0%, 81%, .26);
+    bottom: 0;
+    color: #f9f9f9;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.ta-account .ta-account-id {
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    left: 7px;
+    line-height: 1;
+    padding: 5px 7px;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    z-index: 1
+}
+
+.ta-account .fields {
+    padding: 11px 0 6px
+}
+
+.ta-account .fields li {
+    color: #231f20;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    padding-bottom: 5px
+}
+
+.ta-account .fields li:last-child {
+    padding-bottom: 0
+}
+
+.ta-account .fields .value {
+    font-weight: 700
+}

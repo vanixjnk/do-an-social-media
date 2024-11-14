@@ -1,0 +1,539 @@
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-1.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-2.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-3.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-4.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-5.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-6.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-7.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-8.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-9.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-10.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-11.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-12.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-13.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-14.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-15.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-16.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-17.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-18.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-19.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-20.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-21.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-22.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-23.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-24.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-25.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-26.fa6a4c9.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-27.ae1ea3d.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-28.12e5ff2.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-29.49b88e0.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: italic;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-30.fda4d0b.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-31.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-32.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-33.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-34.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/fonts/Montserrat-100-35.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-36.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-37.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-38.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-39.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    src: url(/assets/fonts/Montserrat-200-40.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-41.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-42.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-43.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-44.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/fonts/Montserrat-300-45.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-46.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-47.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-48.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-49.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/fonts/Montserrat-400-50.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-51.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-52.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-53.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-54.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/fonts/Montserrat-500-55.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-56.3ca6742.woff2) format("woff2");
+    unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f, u+fe2e-fe2f
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-57.59c9b83.woff2) format("woff2");
+    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-58.0ce1283.woff2) format("woff2");
+    unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169, u+01a0-01a1, u+01af-01b0, u+0300-0301, u+0303-0304, u+0308-0309, u+0323, u+0329, u+1ea0-1ef9, u+20ab
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-59.9dd150f.woff2) format("woff2");
+    unicode-range: u+0100-02af, u+0304, u+0308, u+0329, u+1e00-1e9f, u+1ef2-1eff, u+2020, u+20a0-20ab, u+20ad-20cf, u+2113, u+2c60-2c7f, u+a720-a7ff
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    src: url(/assets/fonts/Montserrat-600-60.ac0d285.woff2) format("woff2");
+    unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da, u+02dc, u+0304, u+0308, u+0329, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212, u+2215, u+feff, u+fffd
+}

@@ -1,0 +1,143 @@
+.post .dropdown-item i {
+    margin-right: 5px;
+    text-align: center;
+    width: 17px
+}
+
+.post .post-header {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between
+}
+
+.post .post-header .user {
+    align-items: center;
+    display: flex
+}
+
+.post .post-header .user .info .name {
+    color: var(--bs-dark)
+}
+
+.post .post-action {
+    align-items: center;
+    display: flex;
+    justify-content: space-around
+}
+
+.post .post-action .action {
+    border-right: 1px solid hsla(0, 0%, 62%, .141);
+    font-size: 14px;
+    padding: .67rem 0;
+    text-align: center;
+    width: 100%
+}
+
+.post .post-action .action.active.like,
+.post .post-action .action:hover.like {
+    color: #ff6977;
+    font-weight: 700
+}
+
+.post .post-action .action.active.like i,
+.post .post-action .action:hover.like i {
+    font-weight: 700
+}
+
+.post .post-action .action.active.comment,
+.post .post-action .action:hover.comment {
+    color: var(--bs-primary);
+    font-weight: 700
+}
+
+.post .post-action .action.active.comment i,
+.post .post-action .action:hover.comment i {
+    font-weight: 700
+}
+
+.post .post-action .action:last-child {
+    border-right: 0
+}
+
+.post .post-action .action i {
+    padding-right: 2px
+}
+
+@media(max-width:425px) {
+    .post .post-action .action .text {
+        display: none
+    }
+}
+
+.comment:last-child {
+    margin-bottom: 0
+}
+
+.comment .user {
+    display: flex
+}
+
+.comment .user .avatar img {
+    height: 38px;
+    width: 38px;
+}
+
+@media(max-width:376px) {
+    .comment .user .avatar img {
+        height: 30px;
+         width: 30px;
+    }
+}
+
+.comment .user .name {
+    color: var(--bs-dark)
+}
+
+.comment .user .group {
+    --bs-border-radius: 10px
+}
+
+.comment .user .group .name {
+    font-size: 14px;
+    font-weight: 500
+}
+
+@media(max-width:376px) {
+    .comment .user .group .name {
+        font-size: 13px
+    }
+}
+
+.comment .user .group .content {
+    font-size: 13px
+}
+
+.comment .user .group .compass {
+    padding: 0 12px
+}
+
+.reply-comment:last-child {
+    margin-top: 0
+}
+
+.reply-comment .user {
+    align-items: flex-start;
+    display: flex
+}
+
+.reply-comment .user .group {
+    --bs-border-radius: 10px
+}
+
+.reply-comment .user .group .name {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.reply-comment .user .group .content {
+    font-size: 12px
+}
+
+.reply-comment .user .group .compass {
+    padding: 0 12px
+}

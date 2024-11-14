@@ -1,0 +1,53 @@
+.nav-item .count {
+    background: var(--bs-danger);
+    border-radius: 10px;
+    color: var(--bs-white);
+    font-size: 10px;
+    font-weight: 700;
+    left: -5px;
+    padding: 2px 6px;
+    position: absolute;
+    top: -5px;
+    z-index: 999
+}
+
+.ta-footer-fit {
+    margin-bottom: .7rem;
+    padding: 0 11px
+}
+
+.ta-content-fit {
+    padding: 8px 11px
+}
+
+.ta-footer-title {
+    color: var(--bs-white);
+    font-size: 20px
+}
+
+.ta-footer-link {
+    border-radius: 8px;
+    color: #d7d7d7!important;
+    display: block;
+    font-size: 13px
+}
+
+.ta-footer-link:hover {
+    background: hsla(0, 0%, 55%, .18)
+}
+
+.ta-footer-link i {
+    font-size: 14px;
+    width: 20px
+}
+
+.ta-backto-top {
+    bottom: 15px;
+    position: fixed;
+    right: 20px;
+    z-index: 1200
+}
+
+.ta-backto-top i {
+    line-height: 0
+}

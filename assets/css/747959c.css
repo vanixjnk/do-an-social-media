@@ -1,0 +1,196 @@
+/* Cover Image Style */
+
+.shop-profile .cover {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    /* Adjust height as needed */
+    overflow: hidden;
+    background-color: #f5f5f5;
+    /* Fallback color */
+}
+
+.shop-profile .cover .cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Avatar Style with Cover */
+
+.shop-profile .avatar {
+    position: absolute;
+    bottom: -50px;
+    /* Move up to overlap the cover */
+    left: 20px;
+    /* Adjust for padding */
+    z-index: 10;
+}
+
+.shop-profile .avatar img {
+    height: 150px;
+    width: 150px;
+    border: 3px solid white;
+    /* Border around avatar for separation */
+}
+
+
+/* Positioning for Profile Info */
+
+.shop-profile .shop-context {
+    position: relative;
+    margin-top: 80px;
+    /* Spacing to account for the cover */
+    padding-left: 190px;
+    /* Offset for avatar */
+}
+
+.shop-profile .info {
+    padding-top: 10px;
+}
+
+
+/* Profile Name and Username */
+
+.shop-profile .name {
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.shop-profile .username {
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 577px) {
+    .shop-profile .shop-context {
+        padding-left: 0;
+        text-align: center;
+    }
+    .shop-profile .avatar {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Existing Styles */
+
+.shop-profile .shop-context .social a {
+    padding-right: 7px;
+}
+
+.shop-profile .shop-context .social a:last-child {
+    padding-right: 0;
+}
+
+.shop-profile .shop-context .bio a:hover {
+    color: var(--bs-primary);
+}
+
+@media (max-width: 320px) {
+    .shop-profile .shop-context .name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 577px) {
+    .shop-profile .shop-context .name {
+        font-size: 23px;
+    }
+}
+
+.shop-profile .shop-context .shop-cover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+    max-height: 270px;
+    overflow: hidden;
+}
+
+.shop-profile .shop-context .shop-cover img {
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+@media (min-width: 577px) {
+    .shop-profile .shop-context {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 577px) {
+    .shop-profile .shop-context {
+        flex-direction: column;
+    }
+    .shop-profile .shop-header {
+        flex-direction: column !important;
+        text-align: center;
+    }
+    .shop-profile .shop-header.is-cover {
+        margin-top: -90px;
+    }
+}
+
+.shop-profile .shop-navigation .profile-navigation {
+    background: #d9d9d9;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+}
+
+.shop-profile .shop-navigation .profile-navigation a {
+    color: #231f20;
+    display: block;
+    font-size: 14px;
+    padding: 9px 0;
+    text-align: center;
+}
+
+@media (max-width: 425px) {
+    .shop-profile .shop-navigation .profile-navigation a {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .shop-profile .shop-navigation .profile-navigation a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 320px) {
+    .shop-profile .shop-navigation .profile-navigation a .text {
+        display: none;
+    }
+}
+
+.shop-profile .shop-navigation .profile-navigation.active a {
+    font-weight: 700;
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.home {
+    background: #d7eaf9;
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.home a {
+    color: var(--bs-primary);
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.review {
+    background: #fdf3da;
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.review a {
+    color: #e7b10e;
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.community {
+    background: #ddf2ff;
+}
+
+.shop-profile .shop-navigation .profile-navigation.active.community a {
+    color: var(--bs-info);
+}

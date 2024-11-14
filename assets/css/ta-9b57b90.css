@@ -1,0 +1,499 @@
+@charset "UTF-8";
+.slick-track[data-v-e4caeaf8] {
+    display: block;
+    left: 0;
+    position: relative;
+    top: 0;
+    transform: translateZ(0)
+}
+
+.slick-track.slick-center[data-v-e4caeaf8] {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.slick-track[data-v-e4caeaf8]:after,
+.slick-track[data-v-e4caeaf8]:before {
+    content: "";
+    display: table
+}
+
+.slick-track[data-v-e4caeaf8]:after {
+    clear: both
+}
+
+.slick-loading .slick-track[data-v-e4caeaf8] {
+    visibility: hidden
+}
+
+.slick-slide[data-v-e4caeaf8] {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px
+}
+
+[dir=rtl] .slick-slide[data-v-e4caeaf8] {
+    float: right
+}
+
+.slick-slide img[data-v-e4caeaf8] {
+    display: block
+}
+
+.slick-slide.slick-loading img[data-v-e4caeaf8] {
+    display: none
+}
+
+.slick-slide.dragging img[data-v-e4caeaf8] {
+    pointer-events: none
+}
+
+.slick-initialized .slick-slide[data-v-e4caeaf8] {
+    display: block
+}
+
+.slick-loading .slick-slide[data-v-e4caeaf8] {
+    visibility: hidden
+}
+
+.slick-vertical .slick-slide[data-v-e4caeaf8] {
+    border: 1px solid transparent;
+    display: block;
+    height: auto
+}
+
+.slick-arrow.slick-hidden[data-v-21137603] {
+    display: none
+}
+
+.slick-slider[data-v-3d1a4f76] {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    -khtml-user-select: none
+}
+
+.slick-list[data-v-3d1a4f76] {
+    display: block;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transform: translateZ(0)
+}
+
+.slick-list[data-v-3d1a4f76]:focus {
+    outline: none
+}
+
+.slick-list.dragging[data-v-3d1a4f76] {
+    cursor: pointer;
+    cursor: hand
+}
+
+@font-face {
+    font-family: slick;
+    src: url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAATsAA0AAAAAB2wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABGRlRNAAAE0AAAABoAAAAcdIcYB0dERUYAAAS0AAAAHAAAAB4AJwANT1MvMgAAAZwAAABRAAAAYFAQ/45jbWFwAAACAAAAAFcAAAFiIhFFt2dhc3AAAASsAAAACAAAAAj//wADZ2x5ZgAAAmgAAAE1AAACLD+btmBoZWFkAAABMAAAAC8AAAA2AAEx+2hoZWEAAAFgAAAAHAAAACQD5QIFaG10eAAAAfAAAAAQAAAAFgZKAEpsb2NhAAACWAAAABAAAAAQATYBoG1heHAAAAF8AAAAHQAAACAASwBHbmFtZQAAA6AAAADcAAABbgUngcJwb3N0AAAEfAAAAC4AAABFOXjBpHjaY2BkYGAA4vMGfuHx/DZfGbiZGEDgfGFFPZxWZVBlvM14G8jlYABLAwAT1QnNAHjaY2BkYGC8zcDAoMfEAAJANiMDKmABADBkAe942mNgZGBgYGdwYWBiAAEQycgAEnMA8xkACcgAkwAAAHjaY2BmYmCcwMDKwMDow5jGwMDgDqW/MkgytDAwMDGwcjKAQQNQCZBSYICCgDTXFAYHhkTFSYwP/j9g0GO8/f82A0QNA+NtsBIFBkYANHMN4wAAAHjaY2KAACYIVoVAAALCAJt42mNgYGBmgGAZBkYGEIgB8hjBfBYGByDNw8DBwARkMzAkKigpTlCc9P8/WB0S7/+i+4/uld4rgZoAB4xsDHAhRiYgwcSApoCBcsBMBTNYGGgGAEdEDyUAAAAAAAAAAAAAZgCKANABFnjadZBdToNAEMd3CrtAl5TQLtS0LCoN0A8SGkBI+mAfPET75B1896HppfQcvnII4w3cLYpW6k4ymdn9z8xvBwEKUQg11OgBIXAYWUEQR1uIZoFGpLGxKy3PqrIq8+waXIfJ+5mQSSvkvXwRqqocu1D39QMl2JgvN9zzhsyk1GRDz+OBfzMioCqx0rtdLYo0SiZTZttsOkmidBkveKibFF4Oep9SI46bqk3Twhp4iihUemrMWFPy2NRbthfqKkHi/PxlJLITZdAiSj6ouZ+tn9eZz78DuD9LZYB6bZ8rlCAUVuVdkULjxV4sIEysIc/KSyPmnJDdjhCOdQ0fCTliTX/tjH3ysWao+71qaNjHQjcQwrcuyl+WLZQthCMotJP/h+Xjazz+hfTeRWmG4zOiSyif/q1OtAAAAHjabY49asNAEIU/2ZJDfkiRIvXapUFCEqpcptABUrg3ZhEiQoKVfY9UqVLlGDlADpAT5e16IUWysMz3hjfzBrjjjQT/EjKpCy+4YhN5yZoxcirPe+SMWz4jr6S+5UzSa3VuwpTnBfc8RF7yxDZyKs9r5IxHPiKv1P9iZqDnyAvMQ39UecbScVb/gJO03Xk4CFom3XYK1clhMdQUlKo7/d9NF13RkIdfy+MV7TSe2sl11tRFaXYmJKpWTd7kdVnJ8veevZKc+n3I93t9Jnvr5n4aTVWU/0z9AI2qMkV42mNgYkAGjAzogB0sysTgwtDOyMTIzJlYVJRfnpOaVsIFZhVlpmeUAABuKQkSAAAAAAAB//8AAnjaY2BkYGDgAWIxIGZiYARCNiBmAfMYAAPgADV42mNgYGBkAIKrS9Q5QPT5wop6GA0APf8GGAAA) format("woff")
+}
+
+.slick-next,
+.slick-prev {
+    border: none;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    height: 20px;
+    line-height: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px
+}
+
+.slick-next,
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev,
+.slick-prev:focus,
+.slick-prev:hover {
+    background: transparent;
+    color: transparent;
+    outline: none
+}
+
+.slick-next:focus:before,
+.slick-next:hover:before,
+.slick-prev:focus:before,
+.slick-prev:hover:before {
+    opacity: 1
+}
+
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled:before {
+    opacity: .25
+}
+
+.slick-next:before,
+.slick-prev:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    font-family: slick;
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75
+}
+
+.slick-prev {
+    left: -25px
+}
+
+[dir=rtl] .slick-prev {
+    left: auto;
+    right: -25px
+}
+
+.slick-prev:before {
+    content: "←"
+}
+
+[dir=rtl] .slick-prev:before {
+    content: "→"
+}
+
+.slick-next {
+    right: -25px
+}
+
+[dir=rtl] .slick-next {
+    left: -25px;
+    right: auto
+}
+
+.slick-next:before {
+    content: "→"
+}
+
+[dir=rtl] .slick-next:before {
+    content: "←"
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 30px
+}
+
+.slick-dots {
+    bottom: -25px;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    position: relative
+}
+
+.slick-dots li,
+.slick-dots li button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px
+}
+
+.slick-dots li button {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    padding: 5px
+}
+
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+    outline: none
+}
+
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+    opacity: 1
+}
+
+.slick-dots li button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    content: "•";
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: .25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000;
+    opacity: .75
+}
+
+.slick-next,
+.slick-prev {
+    z-index: 10
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-family: Font Awesome\ 5 Pro;
+    opacity: 1
+}
+
+.slick-prev:before {
+    content: ""
+}
+
+.slick-next:before {
+    content: ""
+}
+
+.bg-profile {
+    background: hsla(240, 3%, 53%, .06);
+    border: 1px dashed rgba(68, 68, 68, .33)
+}
+
+.ta-account-view table tr {
+    border-style: dashed;
+    border-width: 1px
+}
+
+.ta-account-view .slick-account-images .slick-slide,
+.ta-account-view .slick-account-images .slick-slider {
+    padding-right: 7px
+}
+
+.ta-account-view .slick-next,
+.ta-account-view .slick-prev {
+    z-index: 10
+}
+
+.ta-account-view .slick-next:before,
+.ta-account-view .slick-prev:before {
+    background: hsla(0, 0%, 100%, .32);
+    border-radius: 5px;
+    color: #fff;
+    padding: 7px
+}
+
+.ta-account-view .slick-prev {
+    left: 10px
+}
+
+.ta-account-view .slick-next {
+    right: 10px
+}
+
+.ta-account-view .slide-footer {
+    bottom: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 10
+}
+
+@media(max-width:576px) {
+    .ta-account-view .slide-footer {
+        bottom: 15px
+    }
+}
+
+.ta-account-view .slick-index {
+    border-radius: 3px;
+    padding: 0 7px;
+    position: absolute;
+    right: 4px;
+    top: 4px
+}
+
+.ta-account-view .slide-zoom {
+    background: hsla(0, 1%, 80%, .549);
+    border-radius: 5px;
+    padding: 0 .5rem
+}
+
+.loader {
+    background-color: #fff;
+    border-radius: 8px;
+    height: 130px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    width: 100%
+}
+
+.loader:after {
+    animation: gradient-animation_2 1.2s linear infinite;
+    background: linear-gradient(110deg, hsla(0, 0%, 89%, 0), hsla(0, 0%, 89%, 0) 40%, hsla(0, 0%, 89%, .5) 50%, hsla(0, 0%, 89%, 0) 60%, hsla(0, 0%, 89%, 0));
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.loader .wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%
+}
+
+.loader .wrapper>div {
+    background-color: hsla(0, 0%, 62%, .141)
+}
+
+.loader .line-1 {
+    top: 11px
+}
+
+.loader .line-1,
+.loader .line-2 {
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.loader .line-2 {
+    top: 34px
+}
+
+.loader .line-3 {
+    top: 57px
+}
+
+.loader .line-3,
+.loader .line-4 {
+    height: 10px;
+    left: 0;
+    position: absolute;
+    width: 100%
+}
+
+.loader .line-4 {
+    top: 80px
+}
+
+@keyframes gradient-animation_2 {
+    0% {
+        transform: translateX(-100%)
+    }
+    to {
+        transform: translateX(100%)
+    }
+}
+
+.ta-account {
+    border-radius: 5px
+}
+
+.ta-account .carousel-control-next,
+.ta-account .carousel-control-prev {
+    width: 12%
+}
+
+.ta-account .thumbnail img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px
+}
+
+@media(min-width:576px) {
+    .ta-account .thumbnail img {
+        height: 178px
+    }
+}
+
+.ta-account .view-account {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.ta-account .seller {
+    align-items: center;
+    display: flex;
+    justify-content: space-between
+}
+
+.ta-account .seller .avatar img {
+    height: 25px
+}
+
+.ta-account .seller .name {
+    line-height: 0;
+    padding-left: 6px
+}
+
+.ta-account .description {
+    background: hsla(0, 0%, 81%, .26);
+    bottom: 0;
+    color: #f9f9f9;
+    font-size: 12px;
+    line-height: 1.4;
+    padding: 8px;
+    position: absolute;
+    width: 100%;
+    z-index: 1
+}
+
+.ta-account .ta-account-id {
+    border-radius: 3px;
+    color: #fff;
+    font-size: 11px;
+    left: 7px;
+    line-height: 1;
+    padding: 5px 7px;
+    position: absolute;
+    text-align: center;
+    top: 7px;
+    z-index: 1
+}
+
+.ta-account .fields {
+    padding: 11px 0 6px
+}
+
+.ta-account .fields li {
+    color: #231f20;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    padding-bottom: 5px
+}
+
+.ta-account .fields li:last-child {
+    padding-bottom: 0
+}
+
+.ta-account .fields .value {
+    font-weight: 700
+}

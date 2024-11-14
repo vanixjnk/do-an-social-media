@@ -1,0 +1,23 @@
+.revenue {
+    align-items: flex-end;
+    background: var(--bs-gray-300);
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 1rem;
+    padding: .8rem 1.2rem
+}
+
+.revenue .icon {
+    width: 80px
+}
+
+.revenue .text {
+    color: var(--bs-gray-600);
+    font-size: 14px;
+    padding-bottom: 1px
+}
+
+.revenue .count {
+    font-size: 18px;
+    font-weight: 700
+}

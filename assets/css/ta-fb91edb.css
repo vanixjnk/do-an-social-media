@@ -1,0 +1,24 @@
+.admin-route {
+    align-items: center;
+    border-radius: 5px;
+    color: #231f20;
+    display: flex;
+    font-size: 13px;
+    padding: 8px 12px
+}
+
+.admin-route i {
+    padding-right: 7px;
+    text-align: center;
+    width: 24px
+}
+
+.admin-route.nuxt-link-exact-active {
+    background: hsla(0, 0%, 62%, .141);
+    font-weight: 700
+}
+
+.admin-route .count {
+    --bs-badge-padding-x: 0.7em;
+    margin-left: auto
+}

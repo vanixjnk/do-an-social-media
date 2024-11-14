@@ -1,0 +1,42 @@
+.seller-menu {
+    min-height: 300px
+}
+
+.seller-menu .item {
+    margin-bottom: .5rem
+}
+
+.seller-menu .item.text {
+    margin-bottom: .4rem
+}
+
+.seller-menu .item:last-child {
+    margin-bottom: 0
+}
+
+.seller-menu .item a {
+    background: hsla(0, 0%, 56%, .188);
+    border-radius: 12px;
+    color: #231f20;
+    display: block;
+    font-size: 13px;
+    padding: .5rem 1.2rem
+}
+
+.seller-menu .item a.active,
+.seller-menu .item a.nuxt-link-exact-active {
+    background: #231f20;
+    color: #fff
+}
+
+.seller-menu .item a i {
+    padding-right: 5px;
+    text-align: center;
+    width: 23px
+}
+
+.seller-menu .item span.text {
+    color: var(--bs-gray-700);
+    font-size: 12px;
+    padding-left: 3px
+}
