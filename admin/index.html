@@ -61,6 +61,10 @@
     <script src="/assets/js/sweetalert2.js"></script>
     <script src="/assets/js/dt-5ee3ag4.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
 </head>
 
 <body>
@@ -69,39 +73,70 @@
         <div class="ta-content">
             <div class="ta-container py-3 pb-sm-4 pt-sm-3">
                 <div>
-                    <div class="row mt-3">
-                        <div class="col-lg-2" id="first-col">
+                    <h2 class="page-title">Dashboard</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
                             <span id="menu"></span>
                         </div>
-                        <div class="col-lg-8 info-container">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Thông tin cá nhân</h5>
-                                    <form>
-                                        <div class="form-group"><label>Ảnh đại diện:</label>
-                                            <div class="avatar-profile">
-                                                <div class="d-inline-block position-relative">
-                                                    <div class="update text-center w-auto text-white fs-12 cursor-pointer">
-                                                        Sửa
-                                                    </div> <img alt="Avatar" class="avatar-setting rounded ta-lz-load ta-lz-loaded" src="/assets/img/avatar/vani2.jpg"></div>
+                        <div class="seller-container col-lg-9">
+                            <div>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="revenue today">
+                                            <div class="icon"><i class="fal fa-users fa-3x"></i></div>
+                                            <div class="group">
+                                                <div class="text">Total users</div> <span class="count"><span>83.121</span></span>
                                             </div>
                                         </div>
-                                        <div class="form-group"><label for="fullname">Full name:</label> <input id="fullname" type="text" required="required" class="form-control" placeholder="Enter your full name" value="Nguyen Dinh Bao">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="revenue month">
+                                            <div class="icon"><i class="fal fa-image fa-3x"></i></div>
+                                            <div class="group">
+                                                <div class="text">Total posts</div> <span class="count"><span>329.922</span></span>
+                                            </div>
                                         </div>
-                                        <div class="form-group"><label for="username">Username:</label> <input id="username" type="text" required="required" class="form-control" placeholder="Enter your username" value="vanixjnk">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="revenue total_revenue">
+                                            <div class="icon"><i class="fal fa-comments fa-3x"></i></div>
+                                            <div class="group">
+                                                <div class="text">Total comments</div> <span class="count"><span>759.291</span></span>
+                                            </div>
                                         </div>
-                                        <div class="form-group"><label for="tel">Phone number:</label> <input id="tel" type="tel" required="required" class="form-control" placeholder="Enter your phone number" value="0935974907">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="revenue total_products">
+                                            <div class="icon"><i class="fal fa-engine-warning fa-3x"></i></div>
+                                            <div class="group">
+                                                <div class="text">Total violations</div> <span class="count"><span>1.631</span></span>
+                                            </div>
                                         </div>
-                                        <div class="form-group"><label for="email">Email address:</label> <input id="email" type="email" required="required" class="form-control" placeholder="Enter your email address" value="vanixjnk@gmail.com">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body card-table">
+                                                <h5 class="card-title fs-15"><i class="fad fa-chart-pie"></i> Chart
+                                                </h5>
+                                                <canvas id="myChart" style="width:100%"></canvas>
+                                            </div>
                                         </div>
-                                        <div class="form-group"><label for="dob">Date of birth:</label> <input id="dob" type="date" required="required" class="form-control" value="2006-01-01">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="col-lg-12">
+                                        <div class="card">
+                                            <div class="card-body card-table">
+                                                <h5 class="card-title fs-15"><i class="fad fa-map-marked"></i> Map
+                                                </h5>
+                                                <div id="map" style="width: 100%; height: 400px;"></div>
+                                            </div>
                                         </div>
-                                        <button class="ta-submit btn btn-main w-100" type="button" onclick="Update()">Update</button></form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2" id="last-col">
-                            <span id="settings"></span>
                         </div>
                     </div>
                 </div>
@@ -110,11 +145,40 @@
     </div>
 
     <footer id="footer"></footer>
-    <script src="/layouts/render/navbar.js"></script>
-    <script src="/layouts/render/menu.js"></script>
-    <script src="/layouts/render/settings.js"></script>
-    <script src="/layouts/render/footer.js"></script>
+    <script src="/layouts/admin/render/navbar.js"></script>
+    <script src="/layouts/admin/render/menu.js"></script>
+    <script src="/layouts/admin/render/footer.js"></script>
+    <script>
+        var xValues = ["Users", "Posts", "Comments", "Violations"];
+        var yValues = [8121, 32922, 159291, 1631];
+        var barColors = [
+            "rgb(229, 246, 254)",
+            "rgb(228, 246, 232)",
+            "rgb(248, 242, 253)",
+            "rgb(242, 244, 253)",
+        ];
 
+        new Chart("myChart", {
+            type: "pie",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Hội Trai Đẹp - Vani Inc. - Best Social Network in the world"
+                }
+            }
+        });
+        var map = new jsVectorMap({
+            selector: "#map",
+            map: "world",
+        });
+    </script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
@@ -125,24 +189,6 @@
             document.execCommand("copy");
             document.body.removeChild(tempInput);
             noti('success', "Đã sao chép liên kết");
-        }
-
-        function reorderColumns() {
-            var width = window.innerWidth;
-            var firstCol = document.getElementById("first-col");
-            var lastCol = document.getElementById("last-col");
-
-            if (width < 768) {
-                lastCol.parentNode.insertBefore(lastCol, firstCol);
-            } else {
-                firstCol.parentNode.appendChild(lastCol);
-            }
-        }
-        window.addEventListener('resize', reorderColumns);
-        window.addEventListener('load', reorderColumns);
-
-        function Update() {
-            noti('success', "Update successful")
         }
     </script>
 </body>

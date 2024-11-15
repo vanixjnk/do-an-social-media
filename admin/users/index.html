@@ -61,6 +61,10 @@
     <script src="/assets/js/sweetalert2.js"></script>
     <script src="/assets/js/dt-5ee3ag4.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
 </head>
 
 <body>
@@ -69,52 +73,72 @@
         <div class="ta-content">
             <div class="ta-container py-3 pb-sm-4 pt-sm-3">
                 <div>
-                    <div class="row mt-3">
-                        <div class="col-lg-2" id="first-col">
+                    <h2 class="page-title">Users</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
                             <span id="menu"></span>
                         </div>
-                        <div class="col-lg-8 info-container">
+                        <div class="col-lg-9 seller-container">
                             <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Thông tin cá nhân</h5>
-                                    <form>
-                                        <div class="form-group"><label>Ảnh đại diện:</label>
-                                            <div class="avatar-profile">
-                                                <div class="d-inline-block position-relative">
-                                                    <div class="update text-center w-auto text-white fs-12 cursor-pointer">
-                                                        Sửa
-                                                    </div> <img alt="Avatar" class="avatar-setting rounded ta-lz-load ta-lz-loaded" src="/assets/img/avatar/vani2.jpg"></div>
-                                            </div>
+                                <div class="card-body card-table">
+                                    <div class="col-sm col-12">
+                                        <div class="form-group">
+                                            <div class="input-group"><input type="search" placeholder="Search users..." class="form-control" id="searchInput"> <button class="ta-submit btn btn-main" title="Search" onclick="searchUsers()"><i class="fa fa-search"></i></button></div>
                                         </div>
-                                        <div class="form-group"><label for="fullname">Full name:</label> <input id="fullname" type="text" required="required" class="form-control" placeholder="Enter your full name" value="Nguyen Dinh Bao">
-                                        </div>
-                                        <div class="form-group"><label for="username">Username:</label> <input id="username" type="text" required="required" class="form-control" placeholder="Enter your username" value="vanixjnk">
-                                        </div>
-                                        <div class="form-group"><label for="tel">Phone number:</label> <input id="tel" type="tel" required="required" class="form-control" placeholder="Enter your phone number" value="0935974907">
-                                        </div>
-                                        <div class="form-group"><label for="email">Email address:</label> <input id="email" type="email" required="required" class="form-control" placeholder="Enter your email address" value="vanixjnk@gmail.com">
-                                        </div>
-                                        <div class="form-group"><label for="dob">Date of birth:</label> <input id="dob" type="date" required="required" class="form-control" value="2006-01-01">
-                                        </div>
-                                        <button class="ta-submit btn btn-main w-100" type="button" onclick="Update()">Update</button></form>
+                                    </div>
+                                    <table class="table table-hover table-borderless mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Action</th>
+                                                <th>Username</th>
+                                                <th>Full name</th>
+                                                <th>Email</th>
+                                                <th>Status</th>
+                                                <th>Time</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="usersDataTable">
+
+                                        </tbody>
+                                    </table>
+                                    <nav class="pt-2 pb-4">
+                                        <ul class="pagination flex-wrap justify-content-center">
+                                        </ul>
+                                    </nav>
+                                    <script>
+                                        function searchUsers() {
+                                            var searchInput = document.getElementById("searchInput").value.toLowerCase();
+                                            var usersDataTable = document.getElementById("usersDataTable");
+                                            var users = usersDataTable.getElementsByTagName("tr");
+
+                                            for (var i = 0; i < users.length; i++) {
+                                                var username = users[i].getElementsByTagName("td")[2].textContent.toLowerCase();
+                                                var fullname = users[i].getElementsByTagName("td")[3].textContent.toLowerCase();
+                                                var email = users[i].getElementsByTagName("td")[4].textContent.toLowerCase();
+
+                                                if (username.includes(searchInput) || fullname.includes(searchInput) || email.includes(searchInput)) {
+                                                    users[i].style.display = "";
+                                                } else {
+                                                    users[i].style.display = "none";
+                                                }
+                                            }
+                                        }
+                                    </script>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2" id="last-col">
-                            <span id="settings"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <a onclick="deleteUser()" style="display: none;"></a>
     <footer id="footer"></footer>
-    <script src="/layouts/render/navbar.js"></script>
-    <script src="/layouts/render/menu.js"></script>
-    <script src="/layouts/render/settings.js"></script>
-    <script src="/layouts/render/footer.js"></script>
-
+    <script src="/layouts/admin/render/navbar.js"></script>
+    <script src="/layouts/admin/render/menu.js"></script>
+    <script src="/layouts/admin/render/footer.js"></script>
+    <script src="/assets/data/users.js"></script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
@@ -127,22 +151,8 @@
             noti('success', "Đã sao chép liên kết");
         }
 
-        function reorderColumns() {
-            var width = window.innerWidth;
-            var firstCol = document.getElementById("first-col");
-            var lastCol = document.getElementById("last-col");
-
-            if (width < 768) {
-                lastCol.parentNode.insertBefore(lastCol, firstCol);
-            } else {
-                firstCol.parentNode.appendChild(lastCol);
-            }
-        }
-        window.addEventListener('resize', reorderColumns);
-        window.addEventListener('load', reorderColumns);
-
-        function Update() {
-            noti('success', "Update successful")
+        function deleteUser() {
+            noti('success', 'Delete successful');
         }
     </script>
 </body>
