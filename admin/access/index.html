@@ -61,63 +61,48 @@
     <script src="/assets/js/sweetalert2.js"></script>
     <script src="/assets/js/dt-5ee3ag4.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
 </head>
 
 <body>
-    <div id="navbar-auth"></div>
+    <div id="navbar"></div>
     <div id="content">
         <div class="ta-content">
             <div class="ta-container py-3 pb-sm-4 pt-sm-3">
-                <div class="row">
-                    <div class="col-xl-4 offset-xl-4 col-lg-6 offset-lg-3 col-md-6 offset-md-3">
-                        <div class="card pb-1 border mt-3">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">
-                                    <img src="/favicon.ico" height="27" alt="Logo"> Sign In
-                                </h5>
-                                <div>
-                                    <div class="row mb-2">
-                                        <div class="col-12">
-                                            <a href="javascript:void(0)" class="btn btn-light btn-social text-start mb-2">
-                                                <div class="icon"><img height="25" alt="" src="https://cdn.hassbase.com/imgs/social-icon/zalo.png"> </div> <span class="fs-14">Sign in with Zalo</span> <i class="fal fa-arrow-right"></i> </a>
-                                        </div>
-                                        <div class="col-12">
-                                            <a href="javascript:void(0)" class="btn btn-light btn-social text-start mb-2">
-                                                <div class="icon"><img height="25" alt="" src="https://cdn.hassbase.com/cdn-cgi/image/quality=100,format=webp/imgs/social-icon/google.png"> </div> <span class="fs-14">Sign in with Google</span> <i class="fal fa-arrow-right"></i>                                                </a>
+                <div>
+                    <h2 class="page-title">Users</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <span id="menu"></span>
+                        </div>
+                        <div class="col-lg-9 seller-container">
+                            <div class="card">
+                                <div class="card-body card-table">
+                                    <div class="col-sm col-12">
+                                        <div class="form-group">
+                                            <div class="input-group"><input type="search" placeholder="Search users..." class="form-control" id="searchInput"> <button class="ta-submit btn btn-main" title="Search" onclick="searchUsers()"><i class="fa fa-search"></i></button></div>
                                         </div>
                                     </div>
-                                    <form class="m-0 p-0">
-                                        <div class="form-group">
-                                            <label for="">Username or Email:</label>
-                                            <input type="text" name="username" required="required" class="form-control" id="username" placeholder="Enter username or email"> </div>
-                                        <div class="form-group">
-                                            <label for="">Password:</label>
-                                            <input type="password" name="password" required="required" class="form-control" id="password" placeholder="Enter password"> </div>
-                                        <div class="form-group"> <a href="/auth/forgot-password" class="fs-14 text-main">Forgot password?</a> </div>
-                                        <button type="submit" class="ta-submit btn btn-main w-100 text-uppercase" onclick="checkCredentials(event)">Sign in</button>
-                                        <span class="d-block text-secondary text-center fs-12 py-2 divider"></span>
-                                        <p class="text-center mt-3">Don't have an account?</p>
-                                        <a class="ta-submit btn btn-light w-100 text-uppercase" href="/auth/signup/">Sign up</a>
-                                        <span class="d-block text-secondary text-center fs-12 py-2 divider"></span>
-                                    </form>
-                                    <script>
-                                        function checkCredentials(event) {
-                                            event.preventDefault();
-                                            const username = document.getElementById("username").value;
-                                            const password = document.getElementById("password").value;
-                                            const expectedUsername = "vanixjnk";
-                                            const expectedPassword = "12345678";
+                                    <table class="table table-hover table-borderless mb-0">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Action</th>
+                                                <th>Full Name</th>
+                                                <th>Role</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="usersDataTable">
 
-                                            if (username === expectedUsername && password === expectedPassword) {
-                                                noti('success', "Login successful");
-                                                setTimeout(() => {
-                                                    window.location.href = "/admin/";
-                                                }, 1500);
-                                            } else {
-                                                noti('error', "Username or password is incorrect!");
-                                            }
-                                        }
-                                    </script>
+                                        </tbody>
+                                    </table>
+                                    <nav class="pt-2 pb-4">
+                                        <ul class="pagination flex-wrap justify-content-center">
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -126,12 +111,12 @@
             </div>
         </div>
     </div>
-
+    <a onclick="deleteUser()" style="display: none;"></a>
     <footer id="footer"></footer>
-    <script src="/layouts/render/navbar-auth.js"></script>
-    <script src="/layouts/render/menu.js"></script>
-    <script src="/layouts/render/footer.js"></script>
-
+    <script src="/layouts/admin/render/navbar.js"></script>
+    <script src="/layouts/admin/render/menu.js"></script>
+    <script src="/layouts/admin/render/footer.js"></script>
+    <script src="/assets/data/access.js"></script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
@@ -142,6 +127,10 @@
             document.execCommand("copy");
             document.body.removeChild(tempInput);
             noti('success', "Đã sao chép liên kết");
+        }
+
+        function deleteUser() {
+            noti('success', 'Delete successful');
         }
     </script>
 </body>

@@ -87,18 +87,15 @@
                                         </div>
                                     </div>
                                     <form class="m-0 p-0">
+                                        <input type="hidden" name="href" value="account">
+                                        <input type="hidden" name="pageTitle" value="Thông tin cá nhân">
                                         <div class="form-group">
                                             <label for="">Username or Email:</label>
-                                            <input type="text" name="username" required="required" class="form-control" id="username" placeholder="Enter username or email"> </div>
+                                            <input type="text" name="username" required="required" class="form-control" placeholder="Enter username or email" id="username"> </div>
                                         <div class="form-group">
                                             <label for="">Password:</label>
-                                            <input type="password" name="password" required="required" class="form-control" id="password" placeholder="Enter password"> </div>
-                                        <div class="form-group"> <a href="/auth/forgot-password" class="fs-14 text-main">Forgot password?</a> </div>
+                                            <input type="password" name="password" required="required" class="form-control" placeholder="Enter password" id="password"> </div>
                                         <button type="submit" class="ta-submit btn btn-main w-100 text-uppercase" onclick="checkCredentials(event)">Sign in</button>
-                                        <span class="d-block text-secondary text-center fs-12 py-2 divider"></span>
-                                        <p class="text-center mt-3">Don't have an account?</p>
-                                        <a class="ta-submit btn btn-light w-100 text-uppercase" href="/auth/signup/">Sign up</a>
-                                        <span class="d-block text-secondary text-center fs-12 py-2 divider"></span>
                                     </form>
                                     <script>
                                         function checkCredentials(event) {
@@ -128,9 +125,8 @@
     </div>
 
     <footer id="footer"></footer>
-    <script src="/layouts/render/navbar-auth.js"></script>
-    <script src="/layouts/render/menu.js"></script>
-    <script src="/layouts/render/footer.js"></script>
+    <script src="/layouts/admin/render/navbar-auth.js"></script>
+    <script src="/layouts/admin/render/footer.js"></script>
 
     <script>
         function copy() {

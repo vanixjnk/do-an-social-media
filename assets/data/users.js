@@ -111,8 +111,28 @@ function searchUsers() {
         user.email.toLowerCase().includes(searchInput)
     );
     currentPage = 1;
-    renderUsers(currentPage, currentData);
+
+    if (currentData.length === 0) {
+        const userDatatableBody = document.getElementById('usersDataTable');
+        userDatatableBody.innerHTML = `
+            <tr>
+                <td colspan="7">
+                    <div class="text-center my-4 mt-3">
+                        <div class="icon"><i class="fa-7x fad fa-engine-warning text-primary"></i></div>
+                        <h4 class="fw-bold my-2 mt-3">No result</h4>
+                        <p class="mb-0 text-muted fs-14">
+							Please check again!
+						</p>
+                    </div>
+                </td>
+            </tr>
+        `;
+        document.querySelector('.pagination').innerHTML = ''; // Xóa phân trang
+    } else {
+        renderUsers(currentPage, currentData);
+    }
 }
+
 
 function renderUsers(page, data = currentData) {
     const userDatatableBody = document.getElementById('usersDataTable');

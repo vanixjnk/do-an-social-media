@@ -19,7 +19,7 @@
     <meta property="og:image" content="/assets/img/upload/reactjs.jpg">
     <meta name="twitter:image" content="/assets/img/upload/reactjs.jpg">
     <meta property="article:tag" content="social media">
-    <meta name="keywords" content="social media">
+    <meta name="keywords" content="social network, online community, social media, social platform, networking site, social sharing, user interaction, online connections, digital networking, community building, social engagement, social communication, content sharing, virtual networking, online interaction, digital community, user-generated content, social networking apps, online relationships, social networking sites">
     <title>Vani Developer Social Media</title>
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/favicon.ico" sizes="512x512">
@@ -65,6 +65,19 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
     <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
+    <style>
+        .cover-setting {
+            height: 100px;
+            width: 200px;
+            object-fit: cover;
+        }
+        
+        .fav-setting {
+            height: 100px;
+            width: 100px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -73,39 +86,62 @@
         <div class="ta-content">
             <div class="ta-container py-3 pb-sm-4 pt-sm-3">
                 <div>
-                    <h2 class="page-title">Users</h2>
+                    <h2 class="page-title">Settings</h2>
                     <div class="row">
                         <div class="col-lg-3">
                             <span id="menu"></span>
                         </div>
-                        <div class="col-lg-9 seller-container">
-                            <div class="card">
-                                <div class="card-body card-table">
-                                    <div class="col-sm col-12">
-                                        <div class="form-group">
-                                            <div class="input-group"><input type="search" placeholder="Search users..." class="form-control" id="searchInput"> <button class="ta-submit btn btn-main" title="Search" onclick="searchUsers()"><i class="fa fa-search"></i></button></div>
+                        <div class="col-lg-9 admin-container">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><i class="fad fa-users"></i>Settings</h5>
+                                            <div class="form-group"><label for="name">System Name:</label>
+                                                <input type="text" name="name" value="Social Network - Vani Inc." class="form-control" title="name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="logo">Logo:</label>
+                                                <div class="avatar-profile">
+                                                    <div class="d-inline-block position-relative">
+                                                        <div class="update text-center w-auto text-white fs-12 cursor-pointer">
+                                                            Sửa
+                                                        </div>
+                                                        <img alt="Logo" class="fav-setting rounded ta-lz-load ta-lz-loaded" src="/favicon.ico" id="logo">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="favicon">Favicon:</label>
+                                                <div class="avatar-profile">
+                                                    <div class="d-inline-block position-relative">
+                                                        <div class="update text-center w-auto text-white fs-12 cursor-pointer">
+                                                            Sửa
+                                                        </div>
+                                                        <img alt="Favicon" class="fav-setting rounded ta-lz-load ta-lz-loaded" src="/favicon.ico" id="favicon">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="cover">Cover:</label>
+                                                <div class="avatar-profile">
+                                                    <div class="d-inline-block position-relative">
+                                                        <div class="update text-center w-auto text-white fs-12 cursor-pointer">
+                                                            Sửa
+                                                        </div>
+                                                        <img alt="Cover" class="cover-setting rounded ta-lz-load ta-lz-loaded" src="/assets/img/upload/reactjs.jpg" id="cover">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group"><label for="description">Description:</label>
+                                                <textarea type="text" name="description" class="form-control" rows="4" title="Description">Vani Developer Social Media</textarea>
+                                            </div>
+                                            <div class="form-group"><label for="keywords">Keywords:</label>
+                                                <textarea type="text" name="keywords" class="form-control" rows="4" title="Keywords">social network, online community, social media, social platform, networking site, social sharing, user interaction, online connections, digital networking, community building, social engagement, social communication, content sharing, virtual networking, online interaction, digital community, user-generated content, social networking apps, online relationships, social networking sites</textarea>
+                                            </div>
+                                            <button type="submit" order="Đã kiểm tra kỹ chưa?" class="ta-submit btn btn-main w-100 mt-2">Update</button>
                                         </div>
                                     </div>
-                                    <table class="table table-hover table-borderless mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Action</th>
-                                                <th>Username</th>
-                                                <th>Full name</th>
-                                                <th>Email</th>
-                                                <th>Status</th>
-                                                <th>Time</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody id="usersDataTable">
-
-                                        </tbody>
-                                    </table>
-                                    <nav class="pt-2 pb-4">
-                                        <ul class="pagination flex-wrap justify-content-center">
-                                        </ul>
-                                    </nav>
                                 </div>
                             </div>
                         </div>
@@ -114,12 +150,11 @@
             </div>
         </div>
     </div>
-    <a onclick="deleteUser()" style="display: none;"></a>
+
     <footer id="footer"></footer>
     <script src="/layouts/admin/render/navbar.js"></script>
     <script src="/layouts/admin/render/menu.js"></script>
     <script src="/layouts/admin/render/footer.js"></script>
-    <script src="/assets/data/users.js"></script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
@@ -130,10 +165,6 @@
             document.execCommand("copy");
             document.body.removeChild(tempInput);
             noti('success', "Đã sao chép liên kết");
-        }
-
-        function deleteUser() {
-            noti('success', 'Delete successful');
         }
     </script>
 </body>
