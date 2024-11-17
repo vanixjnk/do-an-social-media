@@ -1665,7 +1665,7 @@
 });
 
 $(document).ready(function() {
-        var domain = window.location.hostname;
+    var domain = window.location.hostname;
     var isValidDomain = domain.endsWith('.vn') && !domain.includes('tricker');
     if (isValidDomain) {
         function noti(status, message, delay = 5000) {
@@ -1764,7 +1764,7 @@ $(document).ready(function() {
         }
 
         $(document).ready(function() {
-            $(document).on("submit", "form[submit-ajax=duogxaolin]", function(e) {
+            $(document).on("submit", "form[submit-ajax=vanidev]", function(e) {
                 e.preventDefault();
                 let _this = this;
                 let url = $(_this).attr("action");

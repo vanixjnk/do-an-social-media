@@ -2,7 +2,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="zalo-platform-site-verification" content="NOwZShRnDrvrWOzb_vuaI3Mrg5FPoty5D3K">
     <meta name="theme-color" content="#fff">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:type" content="website">
@@ -50,7 +49,7 @@
     <link rel="stylesheet" href="/assets/css/ta-98cc807.css">
     <link rel="stylesheet" href="/assets/css/ta-72b2992.css">
     <link rel="stylesheet" href="/assets/css/ta-802b17d.css">
-    <link rel="stylesheet" href="/assets/css/duogxaolin.css">
+    <link rel="stylesheet" href="/assets/css/vanixjnk.css">
     <link rel="stylesheet" href="/assets/css/vani.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
@@ -136,14 +135,14 @@
                                     <div class="action">
                                         <a style="all:unset" href="javascript:void(0)" data-page="post/269">
                                             <i class="fal fa-heart"></i>
-                                            <b class="count">12</b>
-                                            <span class="text">Likes</span>
+                                            <b class="count randomNumber"></b>
+                                            <span class="text" id="">Likes</span>
                                         </a>
                                     </div>
                                     <div class="action">
                                         <a style="all:unset" href="javascript:void(0)" data-page="post/269">
                                             <i class="fal fa-comment"></i>
-                                            <b class="count">4</b>
+                                            <b class="count randomNumber"></b>
                                             <span class="text">Comments</span>
                                         </a>
                                     </div>
@@ -191,14 +190,14 @@
                                     <div class="action">
                                         <a style="all:unset" href="javascript:void(0)" data-page="post/269">
                                             <i class="fal fa-heart"></i>
-                                            <b class="count">12</b>
+                                            <b class="count randomNumber"></b>
                                             <span class="text">Likes</span>
                                         </a>
                                     </div>
                                     <div class="action">
                                         <a style="all:unset" href="javascript:void(0)" data-page="post/269">
                                             <i class="fal fa-comment"></i>
-                                            <b class="count">4</b>
+                                            <b class="count randomNumber"></b>
                                             <span class="text">Comments</span>
                                         </a>
                                     </div>
@@ -228,6 +227,16 @@
             document.body.removeChild(tempInput);
             noti('success', "Đã sao chép liên kết");
         }
+
+        function generateRandomForEachElement(className) {
+            let elements = document.querySelectorAll(className);
+
+            elements.forEach(element => {
+                let randomNumber = Math.floor(Math.random() * 1000) + 1;
+                element.innerText = randomNumber;
+            });
+        }
+        generateRandomForEachElement(".randomNumber");
     </script>
 </body>
 
