@@ -66,147 +66,37 @@
 <body>
     <div id="navbar"></div>
     <div id="content">
-        <div class="ta-content">
-            <div class="ta-container py-3 pb-sm-4 pt-sm-3">
-                <div>
-                    <div class="row mt-3">
-                        <div class="col-lg-2">
-                            <span id="menu"></span>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="author-post p-3 mb-3 shadow-sm rounded">
-
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="avatar">
-                                        <img alt="Profile" class="vanixjnk rounded-circle" src="/assets/img/avatar/vani2.jpg">
-                                    </div>
-                                    <div class="ps-2">
-                                        <h4 class="fs-15 mb-0">Nguyễn Đình Bảo <img src="/assets/img/verified.svg" class="verified" alt="verified"></h4>
-                                    </div>
-                                </div>
-                                <div class="author-post-content">
+        <div class="ta-container">
+            <div class="chat-container min-vh-100">
+                <div class="row gx-0">
+                    <div class="col-lg-4 ta-a840 mt-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-sm col-12">
                                     <div class="form-group">
-                                        <label for="content"></label>
-                                        <input rows="1" placeholder="What are you thinking now?" name="content" required="required" class="form-control"></textarea>
-                                    </div>
-                                    <button type="button" class="ta-submit btn btn-main fs-12 btn-sm px-3 fw-bold me-1">Live
-                                            Stream</button>
-                                    <button type="button" class="btn btn-light fs-12 btn-sm px-3 fw-bold" id="removepost">Photo/Video</button>
-                                </div>
-                            </div>
-                            <div class="post shadow-sm bg-white rounded mb-3 border">
-                                <div class="post-context p-3">
-                                    <div class="post-header">
-                                        <div class="user mb-2">
-                                            <div class="avatar">
-                                                <img alt="Profile" class="vanixjnk rounded-circle shadow-sm ta-lz-load ta-lz-loaded" src="/assets/img/avatar/vani2.jpg">
-                                            </div>
-                                            <div class="info ps-2">
-                                                <h4 class="fs-15 mb-0">
-                                                    <a href="javascript:void(0)" class="">
-                                                        <span class="name">Nguyen Dinh Bao <img src="/assets/img/verified.svg" class="verified" alt="verified"></span>
-                                                    </a>
-                                                    <span></span>
-                                                </h4>
-                                                <a href="javascript:void(0)" class="text-secondary hover-line fs-13">
-                                                    9 tháng trước
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="action d-flex align-items-center">
-                                            <div class="dropdown">
-                                                <button type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="btn btn-light btn-action" title="More Options">
-                                                    <i class="fa fa-ellipsis-h"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end mt-2">
-                                                    <li>
-                                                        <a href="javascript:void(0)" onclick="copy()" class="dropdown-item text-secondary">
-                                                            <i class="fad fa-link"></i> Copy
-                                                        </a>
-                                                        <div id="copy" class="d-none"></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="post-content my-2 fs-14 text-pre-wrap">Mới mua các bác ạ</p>
-                                    <img src="https://kientrucvadoisong.net/Upload/News/porsche-viet-nam-gioi-thieu-dong-xe-cayenne-moi.jpg" class="card-img-top" alt="porsche">
-                                </div>
-                                <div class="post-action border-top border-bottom">
-                                    <div class="action">
-                                        <a style="all:unset" href="javascript:void(0)" data-page="post/269">
-                                            <i class="fal fa-heart"></i>
-                                            <b class="count">12</b>
-                                            <span class="text">Likes</span>
-                                        </a>
-                                    </div>
-                                    <div class="action">
-                                        <a style="all:unset" href="javascript:void(0)" data-page="post/269">
-                                            <i class="fal fa-comment"></i>
-                                            <b class="count">4</b>
-                                            <span class="text">Comments</span>
-                                        </a>
+                                        <div class="input-group"><input type="search" placeholder="Search users..." class="form-control" id="searchInput"> <button class="ta-submit btn btn-main" title="Search" onclick="searchUsers()"><i
+                                                    class="fa fa-search"></i></button></div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="post shadow-sm bg-white rounded mb-3 border">
-                                <div class="post-context p-3">
-                                    <div class="post-header">
-                                        <div class="user mb-2">
-                                            <div class="avatar">
-                                                <img alt="Profile" class="vanixjnk rounded-circle shadow-sm ta-lz-load ta-lz-loaded" src="/assets/img/avatar/vani2.jpg">
-                                            </div>
-                                            <div class="info ps-2">
-                                                <h4 class="fs-15 mb-0">
-                                                    <a href="javascript:void(0)" class="">
-                                                        <span class="name">Nguyen Dinh Bao <img src="/assets/img/verified.svg" class="verified" alt="verified"></span>
-                                                    </a>
-                                                    <span></span>
-                                                </h4>
-                                                <a href="javascript:void(0)" class="text-secondary hover-line fs-13">
-                                                    1 tháng trước
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="action d-flex align-items-center">
-                                            <div class="dropdown">
-                                                <button type="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false" class="btn btn-light btn-action" title="More Options">
-                                                    <i class="fa fa-ellipsis-h"></i>
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end mt-2">
-                                                    <li>
-                                                        <a href="javascript:void(0)" onclick="copy()" class="dropdown-item text-secondary">
-                                                            <i class="fad fa-link"></i> Copy
-                                                        </a>
-                                                        <div id="copy" class="d-none"></div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <p class="post-content my-2 fs-14 text-pre-wrap">Siêu xe</p>
-                                    <img src="https://winauto.vn/wp-content/uploads/2024/08/lamborghini-aventador.jpg" class="card-img-top" alt="porsche">
+                                <div class="bg-light ta-7b13">
+                                    <ul class="list-unstyled dac mb-2">
+                                        <li class="cursor-pointer text-success ta-8ca0 active"><i class="fad fa-user"></i> All
+                                        </li>
+                                        <li class="cursor-pointer text-danger ta-8ca0"><i class="fad fa-comments"></i> Unread
+                                        </li>
+                                        <li class="cursor-pointer text-primary ta-8ca0"><i class="fad fa-users"></i> Group
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="post-action border-top border-bottom">
-                                    <div class="action">
-                                        <a style="all:unset" href="javascript:void(0)" data-page="post/269">
-                                            <i class="fal fa-heart"></i>
-                                            <b class="count">12</b>
-                                            <span class="text">Likes</span>
-                                        </a>
-                                    </div>
-                                    <div class="action">
-                                        <a style="all:unset" href="javascript:void(0)" data-page="post/269">
-                                            <i class="fal fa-comment"></i>
-                                            <b class="count">4</b>
-                                            <span class="text">Comments</span>
-                                        </a>
+                                <div class="ta-98b4">
+                                    <div class="ps ta-9bf8">
+
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-2">
-                        </div>
+                    </div>
+                    <div class="col-lg-8 undefined">
                     </div>
                 </div>
             </div>
@@ -217,6 +107,7 @@
     <script src="/layouts/render/navbar.js"></script>
     <script src="/layouts/render/menu.js"></script>
     <script src="/layouts/render/footer.js"></script>
+    <script src="/assets/data/messages.js"></script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
