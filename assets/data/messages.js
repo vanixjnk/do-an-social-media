@@ -126,7 +126,6 @@ document.addEventListener("DOMContentLoaded", () => {
             listItems.forEach((li) => li.classList.remove("active"));
             item.classList.add("active");
 
-            // Determine the type of filter based on the clicked item
             const type = item.classList.contains("text-success")
                 ? "all"
                 : item.classList.contains("text-danger")
