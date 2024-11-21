@@ -1,9 +1,9 @@
 async function loadMenu() {
     try {
-        const response = await fetch('/layouts/menu/');
+        const response = await fetch('/layouts/client/friends/');
         if (response.ok) {
             const html = await response.text();
-            document.getElementById('menu').innerHTML = html;
+            document.getElementById('friends').innerHTML = html;
             let currentPath = window.location.pathname.replace(/\/+$/, '');
             document.querySelectorAll(".list-unstyled li").forEach((li) => {
                 const link = li.querySelector("a");

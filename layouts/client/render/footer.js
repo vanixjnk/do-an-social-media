@@ -1,6 +1,6 @@
 async function loadHTML() {
     try {
-        const response = await fetch('/layouts/footer/');
+        const response = await fetch('/layouts/client/footer/');
         if (response.ok) {
             const html = await response.text();
             document.getElementById('footer').innerHTML = html;

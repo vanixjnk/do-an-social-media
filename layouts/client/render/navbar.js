@@ -1,19 +1,19 @@
 async function loadNavbar() {
     try {
-        const response = await fetch('/layouts/bar/');
+        const response = await fetch('/layouts/client/navbar/');
         if (response.ok) {
             const html = await response.text();
-            document.getElementById('bar').innerHTML = html;
+            document.getElementById('navbar').innerHTML = html;
             let currentPath = window.location.pathname.replace(/\/+$/, '');
-            document.querySelectorAll(".list-unstyled li").forEach((li) => {
+            document.querySelectorAll(".navbar-main li").forEach((li) => {
                 const link = li.querySelector("a");
                 const linkPath = link.getAttribute("href").replace(/\/+$/, '');
                 if (linkPath === currentPath) {
-                    li.classList.add("ta-b202");
-                    link.classList.add("ta-link-exact-active", "ta-link-active");
+                    li.classList.add("active");
+                    link.classList.add("nuxt-link-exact-active", "nuxt-link-active");
                 } else {
-                    li.classList.remove("ta-b202");
-                    link.classList.remove("ta-link-exact-active", "ta-link-active");
+                    li.classList.remove("active");
+                    link.classList.remove("nuxt-link-exact-active", "nuxt-link-active");
                 }
             });
         } else {

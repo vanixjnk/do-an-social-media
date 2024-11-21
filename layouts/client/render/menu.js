@@ -1,19 +1,17 @@
-async function loadNavbar() {
+async function loadMenu() {
     try {
-        const response = await fetch('/layouts/navbar-auth/');
+        const response = await fetch('/layouts/client/menu/');
         if (response.ok) {
             const html = await response.text();
-            document.getElementById('navbar-auth').innerHTML = html;
+            document.getElementById('menu').innerHTML = html;
             let currentPath = window.location.pathname.replace(/\/+$/, '');
-            document.querySelectorAll(".navbar-main li").forEach((li) => {
+            document.querySelectorAll(".list-unstyled li").forEach((li) => {
                 const link = li.querySelector("a");
                 const linkPath = link.getAttribute("href").replace(/\/+$/, '');
                 if (linkPath === currentPath) {
                     li.classList.add("active");
-                    link.classList.add("nuxt-link-exact-active", "nuxt-link-active");
                 } else {
                     li.classList.remove("active");
-                    link.classList.remove("nuxt-link-exact-active", "nuxt-link-active");
                 }
             });
         } else {
@@ -24,4 +22,4 @@ async function loadNavbar() {
     }
 }
 
-loadNavbar();
+loadMenu();

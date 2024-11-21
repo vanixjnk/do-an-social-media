@@ -1,6 +1,6 @@
 async function loadMenu() {
     try {
-        const response = await fetch('/layouts/settings/');
+        const response = await fetch('/layouts/client/settings/');
         if (response.ok) {
             const html = await response.text();
             document.getElementById('settings').innerHTML = html;
