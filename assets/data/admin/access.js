@@ -53,7 +53,7 @@ function searchAccessUsers() {
             </td>
         </tr>
     `;
-        document.querySelector('.pagination').innerHTML = ''; // Clear pagination
+        document.querySelector('.pagination').innerHTML = '';
     } else {
         renderAccessUsers(currentPage, currentData);
     }

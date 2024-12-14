@@ -1,0 +1,7 @@
+:root {
+    --csm-main: #389af0;
+    --csm-rgb: rgba(56, 154, 240, 0.1);
+    --csm-focus: rgba(56, 154, 240, 0.25);
+    --csm-link-color: #389af0;
+    --csm-link-hover-color: #389af0;
+}

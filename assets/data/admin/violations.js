@@ -18,7 +18,6 @@ const violations = [{
         status: "Banned",
         time: "2 ngày trước"
     },
-    // Add more violations here
 ];
 
 const violationsPerPage = 10;

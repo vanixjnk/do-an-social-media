@@ -4,7 +4,7 @@ const users = [{
         fullname: "Nguyen Dinh Bao",
         avatar: "/assets/img/avatar/vani2.jpg",
         email: "vanixjnk@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "1 giờ trước"
     },
     {
@@ -13,7 +13,7 @@ const users = [{
         fullname: "Do Hung",
         avatar: "/assets/img/avatar/dohungavt.jpg",
         email: "dohung@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "2 ngày trước"
     },
     {
@@ -22,7 +22,7 @@ const users = [{
         fullname: "Minh Lam",
         avatar: "/assets/img/avatar/minhlam.jpg",
         email: "minhlam@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "1 giờ trước"
     },
     {
@@ -31,7 +31,7 @@ const users = [{
         fullname: "Trieu Phan",
         avatar: "/assets/img/avatar/trieuphan.jpg",
         email: "trieuphan@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "3 giờ trước"
     },
     {
@@ -40,7 +40,7 @@ const users = [{
         fullname: "Dang Truong Vu",
         avatar: "/assets/img/avatar/vudang.jpg",
         email: "vudang@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "4 giờ trước"
     },
     {
@@ -49,7 +49,7 @@ const users = [{
         fullname: "Elon Musk",
         avatar: "/assets/img/avatar/elonmusk.jpg",
         email: "elonmusk@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "5 giờ trước"
     },
     {
@@ -58,7 +58,7 @@ const users = [{
         fullname: "HCMUE",
         avatar: "/assets/img/avatar/hcmue.jpg",
         email: "hcmue@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "6 giờ trước"
     },
     {
@@ -67,7 +67,7 @@ const users = [{
         fullname: "Viet Phuong",
         avatar: "/assets/img/avatar/vietphuong.jpg",
         email: "vietphuong@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "7 giờ trước"
     },
     {
@@ -76,7 +76,7 @@ const users = [{
         fullname: "Donald Trump",
         avatar: "/assets/img/avatar/trump.jpg",
         email: "trump@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "8 giờ trước"
     },
     {
@@ -85,7 +85,7 @@ const users = [{
         fullname: "Minh Hien",
         avatar: "/assets/img/avatar/minhhien.jpg",
         email: "minhhien@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "9 giờ trước"
     },
     {
@@ -94,7 +94,7 @@ const users = [{
         fullname: "Mark Zuckerberg",
         avatar: "/assets/img/avatar/zuck.jpg",
         email: "markzuckerberg@gmail.com",
-        status: "Hoạt động",
+        status: "Active",
         time: "10 giờ trước"
     }
 ]
@@ -127,7 +127,7 @@ function searchUsers() {
                 </td>
             </tr>
         `;
-        document.querySelector('.pagination').innerHTML = ''; // Xóa phân trang
+        document.querySelector('.pagination').innerHTML = '';
     } else {
         renderUsers(currentPage, currentData);
     }

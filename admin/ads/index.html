@@ -60,6 +60,10 @@
     <script src="/assets/js/sweetalert2.js"></script>
     <script src="/assets/js/dt-5ee3ag4.js"></script>
     <script src="/assets/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world.js"></script>
 </head>
 
 <body>
@@ -68,46 +72,53 @@
         <div class="ta-content">
             <div class="ta-container py-3 pb-sm-4 pt-sm-3">
                 <div>
-                    <div class="row mt-3">
-                        <div class="col-lg-2">
+                    <h2 class="page-title">Ads</h2>
+                    <div class="row">
+                        <div class="col-lg-3">
                             <span id="menu"></span>
                         </div>
-                        <div class="col-lg-8">
-                            <div class="author-post p-3 mb-3 shadow-sm rounded">
+                        <div class="col-lg-9 seller-container">
+                            <div class="card">
+                                <div class="card-body card-table">
+                                    <div class="col-sm col-12">
+                                        <div class="form-group">
+                                            <div class="input-group"><input type="search" placeholder="Search ads..." class="form-control" id="searchInput"> <button class="ta-submit btn btn-main" title="Search" onclick="searchUsers()"><i class="fa fa-search"></i></button></div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-hover table-borderless mb-0 text-center">
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>Action</th>
+                                                <th>Placer</th>
+                                                <th>Start Time</th>
+                                                <th>End Time</th>
+                                                <th>Price</th>
+                                                <th>Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="adsDataTable">
 
-                                <div class="d-flex align-items-center mb-2">
-                                    <div class="avatar">
-                                        <img alt="Profile" class="vanixjnk rounded-circle" src="/assets/img/avatar/vani2.jpg">
-                                    </div>
-                                    <div class="ps-2">
-                                        <h4 class="fs-15 mb-0">Nguyễn Đình Bảo <img src="/assets/img/verified.svg" class="verified" alt="verified"></h4>
-                                    </div>
-                                </div>
-                                <div class="author-post-content">
-                                    <div class="form-group">
-                                        <label for="content"></label>
-                                        <input rows="1" placeholder="What are you thinking now?" name="content" required="required" class="form-control"></textarea>
-                                    </div>
-                                    <button type="button" class="ta-submit btn btn-main fs-12 btn-sm px-3 fw-bold me-1">Live
-                                            Stream</button>
-                                    <button type="button" class="btn btn-light fs-12 btn-sm px-3 fw-bold" id="removepost">Photo/Video</button>
+                                        </tbody>
+                                    </table>
+                                    <nav class="pt-2 pb-4">
+                                        <ul class="pagination flex-wrap justify-content-center">
+                                        </ul>
+                                    </nav>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-2">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <a onclick="deleteAd()" style="display: none;"></a>
     <footer id="footer"></footer>
-    <script src="/layouts/client/render/navbar.js"></script>
-    <script src="/layouts/client/render/menu.js"></script>
-    <script src="/layouts/client/render/footer.js"></script>
-    <script src="/assets/data/client/home.js"></script>
-    <script src="/assets/js/vani.js"></script>
+    <script src="/layouts/admin/render/navbar.js"></script>
+    <script src="/layouts/admin/render/menu.js"></script>
+    <script src="/layouts/admin/render/footer.js"></script>
+    <script src="/assets/data/admin/ads.js"></script>
     <script>
         function copy() {
             var content = document.getElementById("copy").innerText;
@@ -120,24 +131,8 @@
             noti('success', "Đã sao chép liên kết");
         }
 
-        function generateRandomForEachElement(className) {
-            let elements = document.querySelectorAll(className);
-            elements.forEach(element => {
-                let randomNumber = Math.floor(Math.random() * 1000) + 1;
-                element.innerText = randomNumber;
-            });
-        }
-        generateRandomForEachElement(".randomNumber");
-
-        function love(event) {
-            let likeButton = event.currentTarget;
-            let likeForm = likeButton.closest('form');
-            likeForm.classList.toggle('active');
-            if (likeForm.classList.contains('active')) {
-                noti('success', "Đã thích bài viết");
-            } else {
-                noti('error', "Đã bỏ thích bài viết");
-            }
+        function deleteAd() {
+            noti('success', 'Delete successful');
         }
     </script>
 </body>
